@@ -86,7 +86,7 @@ clean package sonar:sonar
 
 ### 🔹 Configure `settings.xml`
 
-Find your Maven settings file:
+To enable Maven to deploy to Nexus, you need to configure credentials in your settings.xml:
 ```bash
 find / -name settings.xml
 ```
@@ -102,8 +102,25 @@ Update it with Nexus credentials:
   </server>
 </servers>
 ```
-
 Add repository URLs under `<distributionManagement>` in `pom.xml`.
+
+```xml
+<distributionManagement>
+  <repository>
+    <id>nexus</id>
+    <name>KK FUNDA Releases Nexus Repository</name>
+    <url>http://172.31.40.189:8081/repository/flipkart-release/</url>
+  </repository>
+
+  <snapshotRepository>
+    <id>nexus</id>
+    <name>KK FUNDA Snapshot Nexus Repository</name>
+    <url>http://172.31.40.189:8081/repository/flipkart-snapshot/</url>
+  </snapshotRepository>
+</distributionManagement>
+```
+
+Make sure the URLs match your Nexus server's configured repository endpoints.
 
 ### 🔹 Jenkins Build Goals
 
