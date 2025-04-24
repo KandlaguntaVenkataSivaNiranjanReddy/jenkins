@@ -144,20 +144,6 @@ Make sure `tomcat-users.xml` has:
 
 ---
 
-## Bonus: CI/CD Pipeline Summary
-
-```
-🔁 Jenkins Freestyle Flow:
-
-1️⃣ Checkout code from GitHub  
-2️⃣ Build using Maven  
-3️⃣ Analyze with SonarQube  
-4️⃣ Deploy to Nexus  
-5️⃣ Deploy to Tomcat  
-```
-
----
-
 ##  Conclusion
 
 Jenkins Freestyle Jobs are a great way to get started with CI/CD. Though Pipelines are more powerful, Freestyle is perfect for:
