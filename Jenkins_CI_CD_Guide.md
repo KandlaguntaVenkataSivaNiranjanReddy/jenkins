@@ -29,6 +29,9 @@ In modern software development, **automation** is the key to speed and reliabili
 7. Jenkins sends out build results (email, Slack, etc.).
 8. Optionally, Jenkins can deploy the build to a server like **Tomcat** (Continuous Deployment).
 
+![KK Funda](https://github.com/user-attachments/assets/20da036b-bf83-4df1-ae35-b7734837511f)
+
+
 ---
 
 ## 🌟 Why is Jenkins So Popular?
