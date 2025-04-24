@@ -6,16 +6,13 @@ A **Freestyle Job** in Jenkins is the most basic and flexible type of job. It al
 ---
 
 ## Key Features of Freestyle Jobs
-
 -  Supports Source Code Management (Git, SVN, etc.)
 - Add build steps like shell commands, Maven targets, etc.
 - Configure post-build actions (e.g., email notifications, deployments)
 -  Supports build triggers (e.g., poll SCM, periodic builds)
 
 ---
-
 ##  When to Use a Freestyle Job
-
 - For **simple projects** with fewer stages.
 - When doing **manual integrations** with external tools.
 - When you **don’t need complex logic**, like what Pipelines provide.
@@ -29,8 +26,7 @@ Here’s how Jenkins Freestyle Jobs can integrate with various tools:
 
 ---
 
-##  Creating Your First Jenkins Freestyle Job
-
+##  Creating Your First Jenkins Freestyle Job 
 1. Go to **Jenkins Dashboard → New Item**
 2. Enter a name (e.g., `jio-dev`) → Select **Freestyle Project**
 3. Under **General**, add a meaningful description.
@@ -57,7 +53,6 @@ Here’s how Jenkins Freestyle Jobs can integrate with various tools:
 ##  Step 2: Maven Configuration
 
 ### Configure Maven in Jenkins
-
 - Go to **Manage Jenkins → Global Tool Configuration**
 - Scroll to **Maven → Add Maven**
 - Name it (e.g., `Maven 3.9.8`) and select version
@@ -66,7 +61,6 @@ Here’s how Jenkins Freestyle Jobs can integrate with various tools:
 >  In Linux CLI, switching Maven versions manually isn't this flexible.
 
 ### Build Step
-
 - Under **Build → Invoke top-level Maven targets**
 - Add goals:
   ```
