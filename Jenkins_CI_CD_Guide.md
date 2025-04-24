@@ -7,8 +7,7 @@ In modern software development, **automation** is the key to speed and reliabili
 
 ## 🛠️ What is Jenkins?
 
-**Jenkins** is an open-source automation server designed to help with:
-
+**Jenkins** Jenkins is an open-source automation server primarily used to implement Continuous Integration (CI) and Continuous Delivery/Deployment (CD) in software development. It helps automate the building, testing, and deployment of applications, making development faster and more reliable.
 - **Continuous Integration (CI)** – Automatically test and integrate code.
 - **Continuous Delivery/Deployment (CD)** – Automatically deliver or deploy code to production.
 
@@ -29,7 +28,8 @@ In modern software development, **automation** is the key to speed and reliabili
 7. Jenkins sends out build results (email, Slack, etc.).
 8. Optionally, Jenkins can deploy the build to a server like **Tomcat** (Continuous Deployment).
 
-![KK Funda](https://github.com/user-attachments/assets/20da036b-bf83-4df1-ae35-b7734837511f)
+![KK Funda](https://github.com/user-attachments/assets/5f79cd33-ab66-4930-8662-7b69399f066e)
+
 
 
 ---
