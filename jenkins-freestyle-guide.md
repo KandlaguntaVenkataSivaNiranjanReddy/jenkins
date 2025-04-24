@@ -3,28 +3,21 @@
 
 A **Freestyle Job** in Jenkins is the most basic and flexible type of job. It allows you to configure and automate tasks through a **Graphical User Interface (GUI)**. It’s beginner-friendly but powerful enough to support full CI/CD workflows like building, testing, and deploying software.
 
----
-
 ## Key Features of Freestyle Jobs
 -  Supports Source Code Management (Git, SVN, etc.)
 - Add build steps like shell commands, Maven targets, etc.
 - Configure post-build actions (e.g., email notifications, deployments)
 -  Supports build triggers (e.g., poll SCM, periodic builds)
 
----
 ##  When to Use a Freestyle Job
 - For **simple projects** with fewer stages.
 - When doing **manual integrations** with external tools.
 - When you **don’t need complex logic**, like what Pipelines provide.
 - Ideal for **learning**, **quick setups**, and **POCs** (proof of concept).
 
----
-
 ## 🔗 DevOps Tool Integration with Freestyle Job
 
 Here’s how Jenkins Freestyle Jobs can integrate with various tools:
-
----
 
 ##  Creating Your First Jenkins Freestyle Job 
 1. Go to **Jenkins Dashboard → New Item**
