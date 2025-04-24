@@ -67,8 +67,9 @@ A **Freestyle Job** in Jenkins is the most basic and flexible type of job. It al
 Add the following under `<properties>`:
 
 ```xml
-<sonar.host.url>http://<sonarqube-server>:9000</sonar.host.url>
-<sonar.login>your-sonarqube-token</sonar.login>
+<sonar.host.url>http://18.138.81.149:9000/</sonar.host.url>
+<sonar.login>admin</sonar.login>
+<sonar.password>passw0rd</sonar.password> 
 ```
 
 ### 🔹 Jenkins Build Configuration
