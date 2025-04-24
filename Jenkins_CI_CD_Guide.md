@@ -87,6 +87,17 @@ Code → Unit Tests → Integration → Acceptance Tests → ✅ Ready for Manua
 - Ideal for **client-based projects**
 - Safer than full automation, with all other steps still automated
 
+- Client-Based Projects
+⚙️ Use Continuous Integration (CI) + Continuous Delivery (CD)
+
+🚀 Code is always in a deployable state
+
+🖱️ Final deployment is manual – typically just one click
+
+🛠️ Ensures high quality, consistent releases, and quick feedback
+
+✅ Safer than Continuous Deployment, while still benefiting from automation
+
 ---
 
 ## ⚙️ Continuous Deployment
@@ -104,24 +115,3 @@ Code → Unit Tests → Integration → Acceptance Tests → 🚀 Auto Deploymen
 - Latest code goes **live instantly**
 - No human involvement in deployment
 - Perfect for **fast-paced internal tools** or **mature pipelines**
-
----
-
-## 🏠 Internal Projects vs 🧑‍💼 Client-Based Projects
-
-| Project Type       | Common Approach     | Deployment Type         |
-|--------------------|---------------------|--------------------------|
-| Internal Tools     | CI / CI + CD        | Manual (1-click)         |
-| Client Applications| CI + CD / CD        | Manual or Auto           |
-
-> 🧠 **Examples**:  
-> Internal – In-house dashboards or automation scripts  
-> Client-Based – Jio, Amazon, Flipkart apps
-
----
-
-## ✅ Final Thoughts
-
-Jenkins is a powerful ally in modern DevOps. Whether you’re working on a passion project at home or managing large-scale enterprise apps, Jenkins helps streamline your process from code to deployment.
-
-> 💬 *“Automate everything — but stay in control.”*
