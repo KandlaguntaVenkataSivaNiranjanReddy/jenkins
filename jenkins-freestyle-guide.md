@@ -15,10 +15,6 @@ A **Freestyle Job** in Jenkins is the most basic and flexible type of job. It al
 - When you **don’t need complex logic**, like what Pipelines provide.
 - Ideal for **learning**, **quick setups**, and **POCs** (proof of concept).
 
-## 🔗 DevOps Tool Integration with Freestyle Job
-
-Here’s how Jenkins Freestyle Jobs can integrate with various tools:
-
 ##  Creating Your First Jenkins Freestyle Job 
 1. Go to **Jenkins Dashboard → New Item**
 2. Enter a name (e.g., `jio-dev`) → Select **Freestyle Project**
