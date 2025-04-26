@@ -1,5 +1,5 @@
 
-# 1. Copying the Job Configuration for a Newly Created Job
+# 1. Copying the Job Configuration for a Newly Created Job 
 
 Instead of recreating all build steps, triggers, and integrations (SonarQube, Nexus, etc.) manually for each new feature branch, you just copy an existing Jenkins job (like jio-dev) and change only the Git branch name.
 
