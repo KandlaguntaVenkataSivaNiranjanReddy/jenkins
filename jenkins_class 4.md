@@ -147,6 +147,9 @@ The Next Build Number Plugin makes it easy to update the build number without ma
 
 The Jenkins Audit Trail Plugin stores log information about key actions in Jenkins, such as who created, deleted, or started a job. It also tracks changes made to job configurations, providing an audit trail of all critical actions in Jenkins.
 
+![🖼️ 1  Views Grouping Diagram (Jenkins) - visual selection](https://github.com/user-attachments/assets/e2750e0e-e9dc-43a3-af05-e2996eb5bbd9)
+
+
 ### How to See Live Logs:
 
 Specify a custom path to store logs.
