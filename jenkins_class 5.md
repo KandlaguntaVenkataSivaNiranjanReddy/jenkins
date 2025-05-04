@@ -178,6 +178,6 @@ Now, when `sai G` logs in:
 This setup keeps your Jenkins access tightly controlled and job-specific.
 
 ### Advanced Setup – Optional
-For better authentication in enterprise environments, you can also integrate Jenkins with an LDAP server (e.g., Microsoft Active Directory). This allows secure and centralized user login based on your organization’s existing credentials.
+For better authentication in enterprise environments, you can also integrate Jenkins with an **LDAP server** (e.g., Microsoft Active Directory). This allows secure and centralized user login based on your organization’s existing credentials.
 
 This enhances security and simplifies user management, especially when combined with RBAC for role-specific access control.
