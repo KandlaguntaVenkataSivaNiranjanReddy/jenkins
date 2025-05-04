@@ -1,10 +1,10 @@
-# Jenkins Scripted Pipeline
+Jenkins Scripted Pipeline is a powerful feature of Jenkins that allows you to define and automate your **CI/CD (Continuous Integration and Continuous Delivery)** workflows using the **Groovy scripting language**.
 
-Jenkins Scripted Pipeline is a powerful feature of Jenkins that allows you to define and automate your CI/CD (Continuous Integration and Continuous Delivery) workflows using Groovy scripting language.
+## Why Use Scripted Pipelines?
+Scripted pipelines offer:
 
-It provides:
-- Full access to programming constructs (e.g., `if`, `for`, variables).
-- The ability to create dynamic and conditional pipelines.
+- **Full access to programming constructs** (e.g., `if`, `for`, variables), allowing complex logic.
+- **Dynamic and conditional pipelines**, making workflows adaptable.
 - High flexibility and customization, suitable for complex pipeline logic.
 
 All pipeline logic is written inside a special file called `Jenkinsfile`, which can be stored in version control systems like Git.
@@ -134,6 +134,7 @@ Add Nexus credentials inside `<servers>`:
     <password>kkfunda</password>
 </server>
 ```
+Configure pom.xml with Distribution Management ensure Maven deploys correctly to Nexus, update your pom.xml file with the repository details.
 
 #### Pipeline:
 ```groovy
@@ -165,7 +166,7 @@ stage('Deploy to Tomcat') {
 
 ---
 
-### 📄 Complete `Jenkinsfile`
+### 📄 `Jenkinsfile`
 
 ```groovy
 node {
@@ -297,6 +298,14 @@ slackSend(color: colorCode, message: summary)
 ---
 
 ## Full Scripted Pipeline Example
+
+In Jenkins pipelines, the `env` object is a built-in variable that provides access to environment variables within the pipeline execution. It allows you to reference important details about the running job.
+
+## Explanation of `env` Variables Used:
+
+- **`${env.JOB_NAME}`** → Retrieves the name of the Jenkins job that is currently running.
+- **`${env.BUILD_NUMBER}`** → Returns the unique build number assigned by Jenkins for this particular job execution.
+- **`${env.NODE_NAME}`** → Indicates the name of the node (agent) where the pipeline is running. If it’s executing on the master, it will return `"master"`, otherwise, it will show the name of the specific agent.
 
 ```groovy
 node {
