@@ -1,6 +1,5 @@
+# Jenkins Scripted Pipeline
 Jenkins Scripted Pipeline is a powerful feature of Jenkins that allows you to define and automate your **CI/CD (Continuous Integration and Continuous Delivery)** workflows using the **Groovy scripting language**.
-
-## Why Use Scripted Pipelines?
 Scripted pipelines offer:
 
 - **Full access to programming constructs** (e.g., `if`, `for`, variables), allowing complex logic.
@@ -11,7 +10,7 @@ All pipeline logic is written inside a special file called `Jenkinsfile`, which 
 
 ---
 
-## Step-by-Step Setup of a Jenkins Scripted Pipeline
+## Setup of a Jenkins Scripted Pipeline
 
 ### Step 1: Create a Jenkins Pipeline Job
 - Go to **Jenkins Dashboard** → Click on **New Item**.
