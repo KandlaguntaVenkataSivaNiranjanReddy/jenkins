@@ -82,17 +82,29 @@ def mavenHome = tool name: 'maven3.9.9'
 ```
 - **tool**: Finds the path of Maven configured in Jenkins.
 - **def**: Declares a Groovy variable.
-- **mavenHome**: Stores the full path.
+- **mavenHome**: Stores the full path like /var/jenkins/tools/hudson.tasks.Maven_MavenInstallation/Maven-3.9.9
+- We then use ${mavenHome}/bin/mvn to call the actual Maven command.
+
 
 #### Example:
 ```groovy
 node {
+
+    // Define Maven tool from Jenkins global configuration
     def mavenHome = tool name: 'maven3.9.9'
 
+    // Stage 1: Checkout source code from Git
+    stage('git checkout')
+    {
+      git branch: 'development', credentialsId: '8d341570-e046-4d2c-8060-33c3d5d493f7', url: 'https://github.com/gangavaramdevops/maven-web-app-project-kk-funda.git'
+    }
+
+    // Stage 2: Build the application and package it (.war/.jar)
     stage('Build') {
         sh "${mavenHome}/bin/mvn clean package"
     }
 }
+
 ```
 After running the pipeline, the `.war` file will be created inside the `target/` directory.
 
